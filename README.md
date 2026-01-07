@@ -21,6 +21,17 @@ Cette application vise à assister un étudiant dans son environnement académiq
 - **Pages informatives** : Accueil, Profil, Paramètres, et À propos avec design cohérent
 - **Thème personnalisé** : Couleurs centralisées dans `AppColors` et appliquées via `AppTheme`
 
+## 📸 Screenshots
+
+![Home Page](images/home_page.png)
+![Drawer Navigation](images/app_drawer.png)
+![Profile Page](images/profile_page.png)
+![Settings Page](images/settings_page.png)
+![Mode sombre](images/dark_mode.png)
+![](images/dark_mode.png)
+![About Page](images/about_page.png)
+![Chatbot Page](images/chatbot_page.png)
+
 ## 🏗️ Architecture applicative
 
 | Couche                    | Description                                                                                        |
