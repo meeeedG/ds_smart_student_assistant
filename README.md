@@ -48,14 +48,6 @@ Cette application vise à assister un étudiant dans son environnement académiq
 | **Modèles**               | Objets JSON sérialisables RagResponse générés via json_serializable.                               |
 | **Backend RAG (externe)** | Point d'entrée `/rag-chat` répond aux requêtes textuelles (non inclus dans ce dépôt).              |
 
-## 📊 Diagramme de séquence (flux chatbot)
-
-```
-Utilisateur → ChatbotPage → RagApi → Backend RAG
-↓ ↓ ↓
-Affiche POST /rag-chat Réponse JSON
-réponse {question} {answer}
-```
 
 ## 🗂️ Structure du projet
 
@@ -102,8 +94,6 @@ ds_smart_student_assistant/
 
 ### Installation
 
-# Cloner le repository (si applicable)
-
 git clone <repository-url>
 cd ds_smart_student_assistant
 
@@ -113,13 +103,11 @@ flutter pub get
 
 # Générer le code (Retrofit + JSON Serializable)
 
-dart run build_runner build --delete-conflicting-outputs### Configuration de l'API
+dart run build_runner build --delete-conflicting-outputs
+
+### Configuration de l'API
 
 `ApiConfig.baseUrl` ajuste automatiquement l'URL selon la plateforme :
-
-- **Émulateur Android** : `http://10.0.2.2:8000`
-- **Device physique Android** : `http://192.168.11.107:8000` (modifiez l'IP selon votre réseau)
-- **Desktop/web** : `http://localhost:8000`
 
 Modifiez l'adresse IP dans `lib/services/api_config.dart` pour pointer vers votre backend.
 
@@ -166,74 +154,7 @@ Le chatbot inclut une gestion d'erreurs personnalisée avec des messages user-fr
 ✅ Respect du thème global pour le style  
 ✅ Aucune couleur codée directement dans les widgets
 
-## 🤝 Contribution
-
-1. Forkez le dépôt
-2. Créez une branche de fonctionnalité (`git checkout -b feature/ma-feature`)
-3. Commitez (`git commit -m "feat: ajoute ma feature"`)
-4. Poussez (`git push origin feature/ma-feature`)
-5. Ouvrez une Pull Request
-
-## 📄 Licence
-
-Ce projet est développé dans le cadre pédagogique de l'Université Mundiapolis.
-
-## 👤 Auteur
+## 👤
 
 **Mohamed Ghalib**  
 Email: mohamedghalib157@gmail.com
-
----
-
-Made with ❤️ pour l'Université Mundiapolis.
-
-```Configuration de l'API
-ApiConfig.baseUrl ajuste automatiquement l'URL selon la plateforme :
-Émulateur Android : http://10.0.2.2:8000
-Device physique Android : http://192.168.11.107:8000 (modifiez l'IP selon votre réseau)
-Desktop/web : http://localhost:8000
-Modifiez l'adresse IP dans lib/services/api_config.dart pour pointer vers votre backend.
-Lancement
-flutter run
-🧪 Tests
-Lancez la suite Flutter par défaut :
-flutter test
-📚 Stack technique
-Flutter (Material 3)
-Navigation : Drawer navigation + Navigator classique
-Réseau : Dio + Retrofit pour les appels API REST
-Sérialisation : Json Serializable & build_runner
-Thème : ThemeController avec ValueListenableBuilder (pas de state management externe)
-Géolocalisation : Geolocator + Flutter Map + OpenStreetMap (dépendances présentes)
-🎨 Thème et couleurs
-Les couleurs sont centralisées dans lib/theme/app_colors.dart :
-Primary : Color.fromRGBO(87, 180, 110, 1) (Vert)
-Secondary : Color.fromARGB(255, 58, 114, 45) (Vert foncé)
-Background : Color.fromARGB(255, 215, 240, 214) (Vert clair)
-Le thème supporte les modes clair et sombre, basculables depuis la page Paramètres.
-🔧 Gestion d'erreurs
-Le chatbot inclut une gestion d'erreurs personnalisée avec des messages user-friendly :
-⏱️ Délai d'attente dépassé
-🌐 Erreur de connexion
-⚠️ Erreur serveur
-❌ Erreurs générales
-📝 Contraintes techniques respectées
-✅ Utilisation de Retrofit avec Dio pour les appels API
-✅ Aucun state management externe (Provider, Bloc, Riverpod, GetX interdits)
-✅ Gestion de l'état avec setState, FutureBuilder, et TextEditingController
-✅ Respect du thème global pour le style
-✅ Aucune couleur codée directement dans les widgets
-🤝 Contribution
-Forkez le dépôt
-Créez une branche de fonctionnalité (git checkout -b feature/ma-feature)
-Commitez (git commit -m "feat: ajoute ma feature")
-Poussez (git push origin feature/ma-feature)
-Ouvrez une Pull Request
-📄 Licence
-Ce projet est développé dans le cadre pédagogique de l'Université Mundiapolis.
-👤 Auteur
-Mohamed Ghalib
-Email: mohamedghalib157@gmail.com
-Made with ❤️ pour l'Université Mundiapolis.
-Ce README reprend la structure du repository de référence et l’adapte à votre projet. Il inclut :- Description et fonctionnalités- Architecture et structure- Instructions d’installation- Configuration de l’API- Stack technique- Gestion d’erreurs- Contraintes techniques respectéesSouhaitez-vous que j’ajoute ou modifie des sections ?
-```
