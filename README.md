@@ -23,14 +23,16 @@ Cette application vise à assister un étudiant dans son environnement académiq
 
 ## 📸 Screenshots
 
-![Home Page](images/home_page.png)
-![Drawer Navigation](images/app_drawer.png)
-![Profile Page](images/profile_page.png)
-![Settings Page](images/settings_page.png)
-![Mode sombre](images/dark_mode.png)
-![](images/dark_mode.png)
-![About Page](images/about_page.png)
-![Chatbot Page](images/chatbot_page.png)
+<div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
+  <img src="images/home_page.png" alt="Home Page" width="200" height="auto" />
+  <img src="images/app_drawer.png" alt="Drawer Navigation" width="200" height="auto" />
+  <img src="images/profile_page.png" alt="Profile Page" width="200" height="auto" />
+  <img src="images/settings_page.png" alt="Settings Page" width="200" height="auto" />
+  <img src="images/dark_mode.png" alt="Mode sombre" width="200" height="auto" />
+  <img src="images/about_page.png" alt="About Page" width="200" height="auto" />
+  <img src="images/chatbot_page.png" alt="Chatbot Page" width="200" height="auto" />
+</div>
+
 
 ## 🏗️ Architecture applicative
 
