@@ -169,7 +169,7 @@ Email: mohamedghalib157@gmail.com
 
 Made with ❤️ pour l'Université Mundiapolis.
 
-Configuration de l'API
+```Configuration de l'API
 ApiConfig.baseUrl ajuste automatiquement l'URL selon la plateforme :
 Émulateur Android : http://10.0.2.2:8000
 Device physique Android : http://192.168.11.107:8000 (modifiez l'IP selon votre réseau)
@@ -218,3 +218,4 @@ Mohamed Ghalib
 Email: mohamedghalib157@gmail.com
 Made with ❤️ pour l'Université Mundiapolis.
 Ce README reprend la structure du repository de référence et l’adapte à votre projet. Il inclut :- Description et fonctionnalités- Architecture et structure- Instructions d’installation- Configuration de l’API- Stack technique- Gestion d’erreurs- Contraintes techniques respectéesSouhaitez-vous que j’ajoute ou modifie des sections ?
+```
