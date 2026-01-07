@@ -154,5 +154,5 @@ Le chatbot inclut une gestion d'erreurs personnalisée avec des messages user-fr
 ✅ Respect du thème global pour le style  
 ✅ Aucune couleur codée directement dans les widgets
 
-**Mohamed Ghalib** 
+**Mohamed Ghalib**
 Email: mohamedghalib157@gmail.com
