@@ -52,34 +52,38 @@ réponse {question} {answer}
 ## 🗂️ Structure du projet
 
 ds_smart_student_assistant/
+```text
 ├── lib/
-│ ├── main.dart
-│ ├── pages/
-│ │ ├── home_page.dart
-│ │ ├── about_page.dart
-│ │ ├── chatbot_page.dart
-│ │ ├── profile_page.dart
-│ │ └── settings_page.dart
-│ ├── services/
-│ │ ├── api_config.dart
-│ │ ├── chatbot_client.dart (+ .g.dart)
-│ │ └── rag_api.dart (+ .g.dart)
-│ ├── models/
-│ │ ├── chat_request.dart (+ .g.dart)
-│ │ ├── chat_response.dart (+ .g.dart)
-│ │ ├── rag_response.dart (+ .g.dart)
-│ │ └── rag_api.dart (+ .g.dart)
-│ ├── theme/
-│ │ ├── app_theme.dart
-│ │ ├── app_colors.dart
-│ │ └── theme_controller.dart
-│ └── widgets/
-│ └── app_drawer.dart
+│   ├── main.dart
+│   ├── pages/
+│   │   ├── home_page.dart
+│   │   ├── about_page.dart
+│   │   ├── chatbot_page.dart
+│   │   ├── profile_page.dart
+│   │   └── settings_page.dart
+│   ├── services/
+│   │   ├── api_config.dart
+│   │   ├── chatbot_client.dart (+ .g.dart)
+│   │   └── rag_api.dart (+ .g.dart)
+│   ├── models/
+│   │   ├── chat_request.dart (+ .g.dart)
+│   │   ├── chat_response.dart (+ .g.dart)
+│   │   ├── rag_response.dart (+ .g.dart)
+│   │   └── rag_api.dart (+ .g.dart)
+│   ├── theme/
+│   │   ├── app_theme.dart
+│   │   ├── app_colors.dart
+│   │   └── theme_controller.dart
+│   └── widgets/
+│       └── app_drawer.dart
 ├── images/
-│ ├── sekiro.jpg
-│ └── ecole-image.jpg
+│   ├── sekiro.jpg
+│   └── ecole-image.jpg
 ├── pubspec.yaml
 └── README.md
+```
+
+
 
 ## ⚙️ Installation & exécution
 
@@ -176,7 +180,7 @@ Email: mohamedghalib157@gmail.com
 
 Made with ❤️ pour l'Université Mundiapolis.
 
-Configuration de l'API
+```Configuration de l'API
 ApiConfig.baseUrl ajuste automatiquement l'URL selon la plateforme :
 Émulateur Android : http://10.0.2.2:8000
 Device physique Android : http://192.168.11.107:8000 (modifiez l'IP selon votre réseau)
@@ -225,3 +229,4 @@ Mohamed Ghalib
 Email: mohamedghalib157@gmail.com
 Made with ❤️ pour l'Université Mundiapolis.
 Ce README reprend la structure du repository de référence et l’adapte à votre projet. Il inclut :- Description et fonctionnalités- Architecture et structure- Instructions d’installation- Configuration de l’API- Stack technique- Gestion d’erreurs- Contraintes techniques respectéesSouhaitez-vous que j’ajoute ou modifie des sections ?
+```
