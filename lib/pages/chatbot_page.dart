@@ -20,7 +20,7 @@ class _ChatScreenState extends State<ChatScreen> {
   final List<ChatMessage> _messages = [];
   late RagApi api;
   bool _isLoading = false;
-  
+
   @override
   void initState() {
     super.initState();
@@ -38,16 +38,16 @@ class _ChatScreenState extends State<ChatScreen> {
         case DioExceptionType.sendTimeout:
         case DioExceptionType.receiveTimeout:
           return "⏱️ Délai d'attente dépassé. Veuillez réessayer.";
-        
+
         case DioExceptionType.connectionError:
           return "🌐 Erreur de connexion. Vérifiez votre connexion internet et réessayez.";
-        
+
         case DioExceptionType.badResponse:
           return "⚠️ Le serveur a renvoyé une erreur. Veuillez réessayer plus tard.";
-        
+
         case DioExceptionType.cancel:
           return "❌ Requête annulée.";
-        
+
         case DioExceptionType.unknown:
         default:
           return "❌ Une erreur est survenue. Veuillez réessayer.";
@@ -61,13 +61,13 @@ class _ChatScreenState extends State<ChatScreen> {
   Future<void> _sendMessage() async {
     final text = _controller.text.trim();
     if (text.isEmpty) return;
-    
+
     setState(() {
       _messages.add(ChatMessage(text: text, isUser: true));
       _controller.clear();
       _isLoading = true;
     });
-    
+
     final answer = await askRag(text);
     setState(() {
       _messages.add(ChatMessage(text: answer, isUser: false));

@@ -28,11 +28,15 @@ Cette application vise à assister un étudiant dans son environnement académiq
   <img src="images/app_drawer.png" alt="Drawer Navigation" width="200" height="auto" />
   <img src="images/profile_page.png" alt="Profile Page" width="200" height="auto" />
   <img src="images/settings_page.png" alt="Settings Page" width="200" height="auto" />
-  <img src="images/dark_mode.png" alt="Mode sombre" width="200" height="auto" />
   <img src="images/about_page.png" alt="About Page" width="200" height="auto" />
   <img src="images/chatbot_page.png" alt="Chatbot Page" width="200" height="auto" />
+  <img src="images/dark_mode.png" alt="Mode sombre" width="200" height="auto" />
+  <img src="images/dark_mode0.png" alt="Mode sombre" width="200" height="auto" />
+  <img src="images/dark_mode1.png" alt="Mode sombre" width="200" height="auto" />
+  <img src="images/dark_mode2.png" alt="Mode sombre" width="200" height="auto" />
+  <img src="images/dark_mode4.png" alt="Mode sombre" width="200" height="auto" />
+  <img src="images/dark_mode5.png" alt="Mode sombre" width="200" height="auto" />
 </div>
-
 
 ## 🏗️ Architecture applicative
 
@@ -46,14 +50,17 @@ Cette application vise à assister un étudiant dans son environnement académiq
 
 ## 📊 Diagramme de séquence (flux chatbot)
 
+```
 Utilisateur → ChatbotPage → RagApi → Backend RAG
 ↓ ↓ ↓
 Affiche POST /rag-chat Réponse JSON
 réponse {question} {answer}
+```
 
 ## 🗂️ Structure du projet
 
 ds_smart_student_assistant/
+
 ```text
 ├── lib/
 │   ├── main.dart
@@ -84,8 +91,6 @@ ds_smart_student_assistant/
 ├── pubspec.yaml
 └── README.md
 ```
-
-
 
 ## ⚙️ Installation & exécution
 
