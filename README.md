@@ -103,7 +103,9 @@ flutter pub get
 
 # Générer le code (Retrofit + JSON Serializable)
 
-dart run build_runner build --delete-conflicting-outputs### Configuration de l'API
+dart run build_runner build --delete-conflicting-outputs
+
+### Configuration de l'API
 
 `ApiConfig.baseUrl` ajuste automatiquement l'URL selon la plateforme :
 
@@ -152,7 +154,4 @@ Le chatbot inclut une gestion d'erreurs personnalisée avec des messages user-fr
 ✅ Respect du thème global pour le style  
 ✅ Aucune couleur codée directement dans les widgets
 
-## 👤 Auteur
-
-**Mohamed Ghalib**  
 Email: mohamedghalib157@gmail.com
