@@ -41,34 +41,36 @@ réponse {question} {answer}
 ## 🗂️ Structure du projet
 
 ds_smart_student_assistant/
+
 ├── lib/
-│ ├── main.dart
-│ ├── pages/
-│ │ ├── home_page.dart
-│ │ ├── about_page.dart
-│ │ ├── chatbot_page.dart
-│ │ ├── profile_page.dart
-│ │ └── settings_page.dart
-│ ├── services/
-│ │ ├── api_config.dart
-│ │ ├── chatbot_client.dart (+ .g.dart)
-│ │ └── rag_api.dart (+ .g.dart)
-│ ├── models/
-│ │ ├── chat_request.dart (+ .g.dart)
-│ │ ├── chat_response.dart (+ .g.dart)
-│ │ ├── rag_response.dart (+ .g.dart)
-│ │ └── rag_api.dart (+ .g.dart)
-│ ├── theme/
-│ │ ├── app_theme.dart
-│ │ ├── app_colors.dart
-│ │ └── theme_controller.dart
-│ └── widgets/
-│ └── app_drawer.dart
+│   ├── main.dart
+│   ├── pages/
+│   │   ├── home_page.dart
+│   │   ├── about_page.dart
+│   │   ├── chatbot_page.dart
+│   │   ├── profile_page.dart
+│   │   └── settings_page.dart
+│   ├── services/
+│   │   ├── api_config.dart
+│   │   ├── chatbot_client.dart (+ .g.dart)
+│   │   └── rag_api.dart (+ .g.dart)
+│   ├── models/
+│   │   ├── chat_request.dart (+ .g.dart)
+│   │   ├── chat_response.dart (+ .g.dart)
+│   │   ├── rag_response.dart (+ .g.dart)
+│   │   └── rag_api.dart (+ .g.dart)
+│   ├── theme/
+│   │   ├── app_theme.dart
+│   │   ├── app_colors.dart
+│   │   └── theme_controller.dart
+│   └── widgets/
+│       └── app_drawer.dart
 ├── images/
-│ ├── sekiro.jpg
-│ └── ecole-image.jpg
+│   ├── sekiro.jpg
+│   └── ecole-image.jpg
 ├── pubspec.yaml
 └── README.md
+
 
 ## ⚙️ Installation & exécution
 
