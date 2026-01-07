@@ -41,7 +41,7 @@ réponse {question} {answer}
 ## 🗂️ Structure du projet
 
 ds_smart_student_assistant/
-
+```text
 ├── lib/
 │   ├── main.dart
 │   ├── pages/
@@ -70,6 +70,8 @@ ds_smart_student_assistant/
 │   └── ecole-image.jpg
 ├── pubspec.yaml
 └── README.md
+```
+
 
 
 ## ⚙️ Installation & exécution
