@@ -48,14 +48,6 @@ Cette application vise à assister un étudiant dans son environnement académiq
 | **Modèles**               | Objets JSON sérialisables RagResponse générés via json_serializable.                               |
 | **Backend RAG (externe)** | Point d'entrée `/rag-chat` répond aux requêtes textuelles (non inclus dans ce dépôt).              |
 
-## 📊 Diagramme de séquence (flux chatbot)
-
-```
-Utilisateur → ChatbotPage → RagApi → Backend RAG
-↓ ↓ ↓
-Affiche POST /rag-chat Réponse JSON
-réponse {question} {answer}
-```
 
 ## 🗂️ Structure du projet
 
