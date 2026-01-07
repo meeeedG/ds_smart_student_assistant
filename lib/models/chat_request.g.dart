@@ -1,10 +1,6 @@
-// GENERATED CODE - DO NOT MODIFY BY HAND
 
 part of 'chat_request.dart';
 
-// **************************************************************************
-// JsonSerializableGenerator
-// **************************************************************************
 
 ChatRequest _$ChatRequestFromJson(Map<String, dynamic> json) => ChatRequest(
       question: json['question'] as String,

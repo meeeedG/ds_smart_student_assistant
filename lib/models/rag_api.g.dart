@@ -1,14 +1,8 @@
-// GENERATED CODE - DO NOT MODIFY BY HAND
 
 part of 'rag_api.dart';
 
-// dart format off
 
-// **************************************************************************
-// RetrofitGenerator
-// **************************************************************************
 
-// ignore_for_file: unnecessary_brace_in_string_interps,no_leading_underscores_for_local_identifiers,unused_element,unnecessary_string_interpolations,unused_element_parameter,avoid_unused_constructor_parameters,unreachable_from_main
 
 class _RagApi implements RagApi {
   _RagApi(this._dio, {this.baseUrl, this.errorLogger}) {
@@ -77,4 +71,3 @@ class _RagApi implements RagApi {
   }
 }
 
-// dart format on

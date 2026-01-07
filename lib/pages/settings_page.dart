@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import '../theme/theme_controller.dart';
 
-/// Page des paramètres de l'application
 class SettingsPage extends StatefulWidget {
   const SettingsPage({super.key});
 
@@ -24,7 +23,6 @@ class _SettingsPageState extends State<SettingsPage> {
       body: ListView(
         children: [
 
-          // ===== THEME MODE =====
           SwitchListTile(
             title: const Text("Mode sombre"),
             subtitle: const Text("Activer le thème sombre"),
@@ -37,7 +35,6 @@ class _SettingsPageState extends State<SettingsPage> {
 
           const Divider(),
 
-          // ===== NOTIFICATIONS =====
           SwitchListTile(
             title: const Text("Notifications"),
             subtitle: const Text("Recevoir des notifications"),

@@ -32,7 +32,6 @@ class _ChatScreenState extends State<ChatScreen> {
       RagResponse resp = await api.askQuestion({"question": question});
       return resp.answer;
     } on DioException catch (e) {
-      // Gestion personnalisée des erreurs Dio
       switch (e.type) {
         case DioExceptionType.connectionTimeout:
         case DioExceptionType.sendTimeout:
@@ -53,7 +52,6 @@ class _ChatScreenState extends State<ChatScreen> {
           return "❌ Une erreur est survenue. Veuillez réessayer.";
       }
     } catch (e) {
-      // Pour les autres types d'erreurs
       return "❌ Une erreur inattendue s'est produite. Veuillez réessayer.";
     }
   }

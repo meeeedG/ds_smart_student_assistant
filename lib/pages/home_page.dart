@@ -2,9 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:smart_student_assistant_rags/pages/chatbot_page.dart';
 import '../widgets/app_drawer.dart';
 
-/// Page d'accueil principale de l'application
-/// Elle présente l'université, un message de bienvenue
-/// et introduit l'assistant IA destiné à aider l'étudiant
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
 
@@ -15,7 +12,6 @@ class HomePage extends StatelessWidget {
         title: const Text('Smart Student Assistant'),
       ),
 
-      // Menu latéral
       drawer: const AppDrawer(),
 
       body: Center(
